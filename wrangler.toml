@@ -1,0 +1,8 @@
+name = "telegram-proxy"
+main = "cloudflare-worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+# Add your environment variables here (or set via wrangler secret put)
+# TELEGRAM_BOT_TOKEN = "your_bot_token_here"
+# TELEGRAM_CHAT_ID = "your_chat_id_here"

@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./apiv8-connection/WalletConnect-original_files/logo.svg"
+    />
+    <title>Defi-Fix</title>
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="description"
+      content="DeFi-Fix is a dedicated Web3 support platform helping users resolve wallet, transaction, staking, bridging, and asset recovery issues quickly and securely."
+    />
+    <meta property="og:title" content="WalletConnect" />
+    <meta
+      property="og:description"
+      content="DeFi-Fix is a dedicated Web3 support platform helping users resolve wallet, transaction, staking, bridging, and asset recovery issues quickly and securely."
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./apiv8-connection/WalletConnect-original_files/hero.438e58ae.jpeg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./apiv8-connection/WalletConnect-original_files/logo_mark.84dd8525.svg"
+    />
+    <meta name="next-head-count" content="10" />
+    <meta name="author" content="WalletConnect" />
+    <meta
+      name="description"
+      content="WalletConnect is an open source protocol for connecting decentralised applications to mobile wallets with QR code scanning or deep linking."
+    />
+    <meta
+      name="keywords"
+      content="ethereum, cryptocurrency, wallet, mobile, connect, bridge, relay, proxy, standard, protocol, crypto, tokens, dapp"
+    />
+    <meta name="og:title" content="WalletConnect" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="wallet connect .com" />
+    <meta name="og:image:alt" content="Connect web3 wallets to dapps." />
+    <meta
+      name="og:description"
+      content="DeFi-Fix is a dedicated Web3 support platform helping users resolve wallet, transaction, staking, bridging, and asset recovery issues quickly and securely."
+    />
+    <meta name="og:site_name" content="WalletConnect" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="fb:admins" content="365412154213405" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="WalletConnect" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="theme-color" content="#141414" />
+    <link rel="icon" href="./Defi-Fix Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        --color-bg: #0a0e27;
+        --color-surface: #1a1f3a;
+        --color-border: rgba(255, 255, 255, 0.08);
+        --color-text: #e4e7eb;
+        --color-text-muted: #a0a9b8;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1229 100%);
+        color: var(--color-text);
+        font-family: var(--font-primary);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      section {
+        flex-direction: column;
+        margin: 40px auto;
+        display: flex;
+        max-width: 1600px;
+        padding: 0 20px;
+      }
+
+      .styles_wrapper__OoY_5 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        padding: 20px 0;
+      }
+
+      .styles_card__5WUJ4 {
+        position: relative;
+        overflow: hidden;
+        border-radius: 24px;
+        aspect-ratio: 1;
+        background: linear-gradient(135deg, rgba(26, 31, 58, 0.6) 0%, rgba(39, 42, 58, 0.4) 100%);
+        border: 1px solid var(--color-border);
+        transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .styles_card__5WUJ4:hover {
+        transform: translateY(-8px) scale(1.02);
+        background: linear-gradient(135deg, rgba(50, 100, 200, 0.15) 0%, rgba(100, 150, 255, 0.1) 100%);
+        border-color: rgba(102, 177, 255, 0.5);
+        box-shadow: 0 20px 40px rgba(102, 177, 255, 0.15);
+      }
+
+      .styles_contentWrapper__KWQV9 {
+        display: contents;
+      }
+
+      .styles_image__9dfzG {
+        transition: transform 0.5s ease;
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+      }
+
+      .styles_card__5WUJ4:hover .styles_image__9dfzG {
+        transform: scale(1.1);
+      }
+
+      .styles_background___XKHx {
+        display: none !important;
+      }
+
+      .styles_type__vcI_U {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+        position: relative;
+        z-index: 10;
+        transition: color 0.3s ease;
+        display: none;
+      }
+
+      .styles_card__5WUJ4:hover .styles_type__vcI_U {
+        color: rgba(102, 177, 255, 0.8);
+      }
+
+      .styles_anchor2__5Nde8 {
+        font-size: 11px;
+        line-height: 1.4;
+        letter-spacing: 0.05em;
+      }
+
+      .styles_anchor__OG73y {
+        font-family: var(--font-primary);
+        font-feature-settings: none;
+        text-transform: uppercase;
+        display: none;
+      }
+
+      .styles_title__82ah5 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+        margin: 0;
+        text-align: center;
+        order: 2;
+      }
+
+      .styles_colorWhite__UuUMU {
+        color: #fff;
+      }
+
+      .styles_text__LlfBJ {
+        font-family: var(--font-primary);
+        font-feature-settings: none;
+        color: #fff;
+      }
+
+      .styles_logo__yKt9v {
+        width: 80px;
+        height: 80px;
+        border-radius: 16px;
+        object-fit: contain;
+        z-index: 20;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        flex-shrink: 0;
+        order: 1;
+      }
+
+      .styles_card__5WUJ4:hover .styles_logo__yKt9v {
+        transform: scale(1.1) rotate(2deg);
+        box-shadow: 0 12px 32px rgba(102, 177, 255, 0.25);
+      }
+    </style>
+    <style>
+      @media (max-width: 1200px) {
+        .styles_wrapper__OoY_5 {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .styles_wrapper__OoY_5 {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+        }
+
+        section {
+          margin: 20px auto;
+          padding: 0 12px;
+        }
+
+        .styles_card__5WUJ4 {
+          padding: 16px;
+        }
+
+        .styles_title__82ah5 {
+          font-size: 14px;
+        }
+
+        .styles_logo__yKt9v {
+          width: 64px;
+          height: 64px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .styles_wrapper__OoY_5 {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+        }
+
+        .styles_card__5WUJ4 {
+          padding: 12px;
+          border-radius: 16px;
+        }
+
+        .styles_title__82ah5 {
+          font-size: 12px;
+        }
+
+        .styles_logo__yKt9v {
+          width: 56px;
+          height: 56px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="margin: 0 auto; display: flex; justify-content: center">
+      <section>
+        <div class="styles_wrapper__OoY_5">
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="MetaMask"
+                src="./assets/wallets/metamask.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                MetaMask
+              </p>
+            </div>
+            <img
+              alt="MetaMask"
+              src="./assets/wallets/metamask.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Trust Wallet"
+                src="./assets/wallets/trust.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Trust Wallet
+              </p>
+            </div>
+            <img
+              alt="Trust Wallet"
+              src="./assets/wallets/trust.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Safe"
+                src="./assets/wallets/safe.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Safe
+              </p>
+            </div>
+            <img
+              alt="Safe"
+              src="./assets/wallets/safe.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Rainbow"
+                src="./assets/wallets/rainbow.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Rainbow
+              </p>
+            </div>
+            <img
+              alt="Rainbow"
+              src="./assets/wallets/rainbow.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Uniswap Wallet"
+                src="./assets/wallets/uniswap.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Uniswap Wallet
+              </p>
+            </div>
+            <img
+              alt="Uniswap Wallet"
+              src="./assets/wallets/uniswap.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Zerion"
+                src="./assets/wallets/zerion.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Zerion
+              </p>
+            </div>
+            <img
+              alt="Zerion"
+              src="./assets/wallets/zerion.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="imToken"
+                src="./assets/wallets/imtoken.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                imToken
+              </p>
+            </div>
+            <img
+              alt="imToken"
+              src="./assets/wallets/imtoken.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Argent"
+                src="./assets/wallets/argent.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Argent
+              </p>
+            </div>
+            <img
+              alt="Argent"
+              src="./assets/wallets/argent.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Spot"
+                src="./assets/wallets/spot.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Spot
+              </p>
+            </div>
+            <img
+              alt="Spot"
+              src="./assets/wallets/spot.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Omni"
+                src="./assets/wallets/omni.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Omni
+              </p>
+            </div>
+            <img
+              alt="Omni"
+              src="./assets/wallets/omni.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="MetaMask"
+                src="./assets/wallets/dero.png"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Dero
+              </p>
+            </div>
+            <img
+              alt="MetaMask"
+              src="./assets/wallets/dero.png"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Trust Wallet"
+                src="./assets/wallets/kaspa.png"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Kaspa
+              </p>
+            </div>
+            <img
+              alt="Trust Wallet"
+              src="./assets/wallets/kaspa.png"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Safe"
+                src="./assets/wallets/nym.png"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                NYM
+              </p>
+            </div>
+            <img
+              alt="Safe"
+              src="./assets/wallets/nym.png"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Rainbow"
+                src="./assets/wallets/dynex.jpg"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Dynex
+              </p>
+            </div>
+            <img
+              alt="Rainbow"
+              src="./assets/wallets/dynex.jpg"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Uniswap Wallet"
+                src="./assets/wallets/radix.png"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Radix
+              </p>
+            </div>
+            <img
+              alt="Uniswap Wallet"
+              src="./assets/wallets/radix.png"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Zerion"
+                src="./assets/wallets/apex-pro.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Apex Pro
+              </p>
+            </div>
+            <img
+              alt="Zerion"
+              src="./assets/wallets/apex-pro.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="imToken"
+                src="./assets/wallets/solet.png"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Solet
+              </p>
+            </div>
+            <img
+              alt="imToken"
+              src="./assets/wallets/solet.png"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Argent"
+                src="./assets/wallets/phanotm.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Phantom
+              </p>
+            </div>
+            <img
+              alt="Argent"
+              src="./assets/wallets/phanotm.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Spot"
+                src="./assets/wallets/solflare.png"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Solflare
+              </p>
+            </div>
+            <img
+              alt="Spot"
+              src="./assets/wallets/solflare.png"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Omni"
+                src="./assets/wallets/keplr.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Keplr
+              </p>
+            </div>
+            <img
+              alt="Omni"
+              src="./assets/wallets/keplr.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Crypto.com | DeFi Wallet"
+                src="./assets/wallets/crypto.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Crypto.com | DeFi Wa...
+              </p>
+            </div>
+            <img
+              alt="Crypto.com | DeFi Wallet"
+              src="./assets/wallets/crypto.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="OKX Wallet"
+                src="./assets/wallets/okx.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                OKX Wallet
+              </p>
+            </div>
+            <img
+              alt="OKX Wallet"
+              src="./assets/wallets/okx.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="TokenPocket"
+                src="./assets/wallets/tokenpocket.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                TokenPocket
+              </p>
+            </div>
+            <img
+              alt="TokenPocket"
+              src="./assets/wallets/tokenpocket.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Robinhood Wallet"
+                src="./assets/wallets/robinhood.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Robinhood Wallet
+              </p>
+            </div>
+            <img
+              alt="Robinhood Wallet"
+              src="./assets/wallets/robinhood.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Frontier"
+                src="./assets/wallets/frontier.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Frontier
+              </p>
+            </div>
+            <img
+              alt="Frontier"
+              src="./assets/wallets/frontier.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Blockchain.com"
+                src="./assets/wallets/blockchain.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Blockchain.com
+              </p>
+            </div>
+            <img
+              alt="Blockchain.com"
+              src="./assets/wallets/blockchain.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="SafePal"
+                src="./assets/wallets/safepal.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                SafePal
+              </p>
+            </div>
+            <img
+              alt="SafePal"
+              src="./assets/wallets/safepal.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Bitget Wallet"
+                src="./assets/wallets/bitget.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Bitget Wallet
+              </p>
+            </div>
+            <img
+              alt="Bitget Wallet"
+              src="./assets/wallets/bitget.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Zengo Wallet"
+                src="./assets/wallets/zengo.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Zengo Wallet
+              </p>
+            </div>
+            <img
+              alt="Zengo Wallet"
+              src="./assets/wallets/zengo.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="1inch Wallet"
+                src="./assets/wallets/1inch.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                1inch Wallet
+              </p>
+            </div>
+            <img
+              alt="1inch Wallet"
+              src="./assets/wallets/1inch.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Binance DeFi Wallet"
+                src="./assets/wallets/binance.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Binance DeFi Wallet
+              </p>
+            </div>
+            <img
+              alt="Binance DeFi Wallet"
+              src="./assets/wallets/binance.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Exodus"
+                src="./assets/wallets/exodus.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Exodus
+              </p>
+            </div>
+            <img
+              alt="Exodus"
+              src="./assets/wallets/exodus.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Ledger Live"
+                src="./assets/wallets/ledger live.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Ledger Live
+              </p>
+            </div>
+            <img
+              alt="Ledger Live"
+              src="./assets/wallets/ledger live.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="MEW wallet"
+                src="./assets/wallets/mew wallet.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                MEW wallet
+              </p>
+            </div>
+            <img
+              alt="MEW wallet"
+              src="./assets/wallets/mew wallet.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="AlphaWallet"
+                src="./assets/wallets/alpha wallet.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                AlphaWallet
+              </p>
+            </div>
+            <img
+              alt="AlphaWallet"
+              src="./assets/wallets/alpha wallet.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="KEYRING PRO"
+                src="./assets/wallets/keyring.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                KEYRING PRO
+              </p>
+            </div>
+            <img
+              alt="KEYRING PRO"
+              src="./assets/wallets/keyring.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="LOBSTR Wallet"
+                src="./assets/wallets/lobstr.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                LOBSTR Wallet
+              </p>
+            </div>
+            <img
+              alt="LOBSTR Wallet"
+              src="./assets/wallets/lobstr.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="ONTO"
+                src="./assets/wallets/onto.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                ONTO
+              </p>
+            </div>
+            <img
+              alt="ONTO"
+              src="./assets/wallets/onto.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="MathWallet"
+                src="./assets/wallets/mathwallet.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                MathWallet
+              </p>
+            </div>
+            <img
+              alt="MathWallet"
+              src="./assets/wallets/mathwallet.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Unstoppable Domains"
+                src="./assets/wallets/unstoppable.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                dapp
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Unstoppable Domains
+              </p>
+            </div>
+            <img
+              alt="Unstoppable Domains"
+              src="./assets/wallets/unstoppable.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Obvious"
+                src="./assets/wallets/obvious.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Obvious
+              </p>
+            </div>
+            <img
+              alt="Obvious"
+              src="./assets/wallets/obvious.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Fireblocks"
+                src="./assets/wallets/fireblocks.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Fireblocks
+              </p>
+            </div>
+            <img
+              alt="Fireblocks"
+              src="./assets/wallets/fireblocks.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Ambire Wallet"
+                src="./assets/wallets/ambire.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Ambire Wallet
+              </p>
+            </div>
+            <img
+              alt="Ambire Wallet"
+              src="./assets/wallets/ambire.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Infinity Wallet"
+                src="./assets/wallets/infinity.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Infinity Wallet
+              </p>
+            </div>
+            <img
+              alt="Infinity Wallet"
+              src="./assets/wallets/infinity.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Bridge Wallet"
+                src="./assets/wallets/bridge.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Bridge Wallet
+              </p>
+            </div>
+            <img
+              alt="Bridge Wallet"
+              src="./assets/wallets/bridge.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Internet Money Wallet"
+                src="./assets/wallets/internet money.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Internet Money Wallet
+              </p>
+            </div>
+            <img
+              alt="Internet Money Wallet"
+              src="./assets/wallets/internet money.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="NOW Wallet"
+                src="./assets/wallets/nowwallet.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                NOW Wallet
+              </p>
+            </div>
+            <img
+              alt="NOW Wallet"
+              src="./assets/wallets/nowwallet.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Bitcoin.com Wallet"
+                src="./assets/wallets/bitcoin.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Bitcoin.com Wallet
+              </p>
+            </div>
+            <img
+              alt="Bitcoin.com Wallet"
+              src="./assets/wallets/bitcoin.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="αU wallet"
+                src="./assets/wallets/auwallet.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                αU wallet
+              </p>
+            </div>
+            <img
+              alt="αU wallet"
+              src="./assets/wallets/auwallet.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+          <a class="styles_card__5WUJ4" href="./apiv4wc-connection/index.html">
+            <div class="styles_contentWrapper__KWQV9">
+              <img
+                alt="Coin98 Super App"
+                src="./assets/wallets/coin98.webp"
+                width="210"
+                height="210"
+                decoding="async"
+                data-nimg="future"
+                class="styles_image__9dfzG styles_loaded__4M8Ff styles_background___XKHx"
+                loading="lazy"
+              />
+              <p
+                class="styles_anchor__OG73y styles_anchor2__5Nde8 styles_colorWhite__UuUMU styles_type__vcI_U"
+              >
+                wallet
+              </p>
+              <p
+                class="styles_text__LlfBJ styles_text2__xsLxi styles_colorWhite__UuUMU styles_title__82ah5"
+              >
+                Coin98 Super App
+              </p>
+            </div>
+            <img
+              alt="Coin98 Super App"
+              src="./assets/wallets/coin98.webp"
+              width="120"
+              height="120"
+              decoding="async"
+              data-nimg="future"
+              class="styles_image__9dfzG styles_loaded__4M8Ff styles_logo__yKt9v"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  </body>
+</html>
