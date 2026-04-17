@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defi-Fix</title>
+    <link rel="icon" href="../Defi-Fix Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        :root {
+            --color-background: #0a0e27;
+            --color-text: #e4e7eb;
+            --color-text-muted: #a0a9b8;
+            --color-accent: rgba(102, 177, 255, 0.3);
+            --color-border: rgba(255, 255, 255, 0.08);
+            --color-error: rgba(239, 68, 68, 0.15);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1229 100%);
+            color: var(--color-text);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .page-wrapper {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+        .logo {
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+            margin-bottom:32px;
+            color:var(--color-text);
+            text-decoration:none;
+            font-size:18px;
+            font-weight:600;
+        }
+        .logo img { height:30px; }
+
+        .error-card {
+            background: var(--color-error);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 24px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+        .error-card .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ef4444;
+            margin-bottom: 8px;
+        }
+        .error-card .message {
+            font-size: 14px;
+            color: #fff;
+        }
+        .button-group {
+            display: flex;
+            gap: 16px;
+            wrap: wrap;
+            justify-content: center;
+        }
+        .button-primary,
+        .button-secondary {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .button-primary {
+            background: linear-gradient(135deg, rgba(102, 177, 255, 0.9) 0%, rgba(99, 102, 241, 0.9) 100%);
+            color: #fff;
+        }
+        .button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(102, 177, 255, 0.3);
+        }
+        .button-secondary {
+            background: rgba(255,255,255,0.1);
+            color: var(--color-text);
+        }
+        .button-secondary:hover {
+            background: rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <a href="../index.html" class="logo">
+            <img src="../assets/images/wc1.png" alt="Logo">
+            Walletconnect
+        </a>
+        <div class="error-card">
+            <div class="title">Error Connecting!</div>
+            <div class="message">SERVER-BH7R6T7 failed. Try connecting manually.</div>
+        </div>
+        <div class="button-group">
+            <a href="../connection-module/index.html" class="button-primary">Connect Manually</a>
+            <a href="../index.html" class="button-secondary">Cancel</a>
+        </div>
+    </div>
+</body>
+</html>

